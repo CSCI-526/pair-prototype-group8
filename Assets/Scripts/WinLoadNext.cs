@@ -25,4 +25,11 @@ public class WinLoadNext : MonoBehaviour
             SceneManager.LoadScene(nextLevelName);
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Circle")){
+            Debug.Log("Flag intersected, next level");
+            SceneManager.LoadScene(nextLevelName);
+        }
+    }
 }
