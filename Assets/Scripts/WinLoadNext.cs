@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class WinLoadNext : MonoBehaviour
 {
     public string nextLevelName = "MainMenu";
+    public GameOverManager gameOverManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(gameOverManager == null) {
+            gameOverManager = FindObjectOfType<GameOverManager>();
+        }
     }
 
     // Update is called once per frame
@@ -22,14 +25,16 @@ public class WinLoadNext : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle")){
             Debug.Log("Flag hit, next level");
-            SceneManager.LoadScene(nextLevelName);
+            gameOverManager.ShowPassGame();
+            // SceneManager.LoadScene(nextLevelName);
         }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag.Equals("Circle")){
             Debug.Log("Flag intersected, next level");
-            SceneManager.LoadScene(nextLevelName);
+            // SceneManager.LoadScene(nextLevelName);
+            gameOverManager.ShowPassGame();
         }
     }
 }

@@ -18,8 +18,12 @@ public class LevelSelector : MonoBehaviour
     }
 
     public void OpenLevelScene() {
-        var type = ToggleSwitch.CurrentValue ? "WackyLevel" : "Level";
+        var type = ToggleSwitch.CurrentValue ? "WackyLevel" : "NEW Level ";
         Debug.Log("Current type: " + type);
+        if ( ToggleSwitch.CurrentValue == false && level > 3)
+        {
+            type = "Level";
+        }
         SceneManager.LoadScene(type + level.ToString());
     }
 }
