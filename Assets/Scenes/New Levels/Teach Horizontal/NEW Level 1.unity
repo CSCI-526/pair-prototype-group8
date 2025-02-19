@@ -1688,6 +1688,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bd66288a0c7c42968728b7c63f1668d, type: 3}
+--- !u!1 &889247082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7719803030024730227, guid: 4bd66288a0c7c42968728b7c63f1668d, type: 3}
+  m_PrefabInstance: {fileID: 889247081}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &907964777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2713,6 +2718,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4143715397079847892, guid: 2dca73fec1d874806ba16c61815678c0, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 889247082}
+    - target: {fileID: 6361544804815826414, guid: 2dca73fec1d874806ba16c61815678c0, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 889247082}
     - target: {fileID: 7555202309479436414, guid: 2dca73fec1d874806ba16c61815678c0, type: 3}
       propertyPath: m_Name
       value: RegularGoal

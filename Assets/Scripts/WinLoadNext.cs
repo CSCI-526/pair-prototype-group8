@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class WinLoadNext : MonoBehaviour
 {
     public string nextLevelName = "MainMenu";
+    public GameObject winScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +23,26 @@ public class WinLoadNext : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle")){
             Debug.Log("Flag hit, next level");
-            SceneManager.LoadScene(nextLevelName);
+            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
+            rb.gravityScale = 0.0f;
+            rb.velocity = new Vector2(0.0f, 0.0f);
+            rb.angularVelocity = 0.0f;
+            //rb.rotation = 0.0f;
+            winScreen.SetActive(true);
+            //SceneManager.LoadScene(nextLevelName);
         }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag.Equals("Circle")){
             Debug.Log("Flag intersected, next level");
-            SceneManager.LoadScene(nextLevelName);
+            Rigidbody2D rb = other.gameObject.GetComponent<Rigidbody2D>();
+            rb.gravityScale = 0.0f;
+            rb.velocity = new Vector2(0.0f, 0.0f);
+            rb.angularVelocity = 0.0f;
+            // rb.rotation = 0.0f;
+            winScreen.SetActive(true);
+            //SceneManager.LoadScene(nextLevelName);
         }
     }
 }
