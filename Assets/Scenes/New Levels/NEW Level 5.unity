@@ -781,6 +781,7 @@ MonoBehaviour:
   timerStarted: 0
   timerDone: 0
   circle: {fileID: 737853493}
+  circleSpeed: 4
 --- !u!1001 &696882587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -851,13 +852,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 447521642423487204, guid: 9924d7c492a124a09b0d235bf54f5041, type: 3}
+      propertyPath: angularSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447521642423487204, guid: 9924d7c492a124a09b0d235bf54f5041, type: 3}
+      propertyPath: goTransparent
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6649666695536230637, guid: 9924d7c492a124a09b0d235bf54f5041, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -5.65
       objectReference: {fileID: 0}
     - target: {fileID: 6649666695536230637, guid: 9924d7c492a124a09b0d235bf54f5041, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.52
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 6649666695536230637, guid: 9924d7c492a124a09b0d235bf54f5041, type: 3}
       propertyPath: m_LocalPosition.z
