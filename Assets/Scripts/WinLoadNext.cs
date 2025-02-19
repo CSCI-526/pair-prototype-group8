@@ -25,16 +25,24 @@ public class WinLoadNext : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Circle")){
             Debug.Log("Flag hit, next level");
-            gameOverManager.ShowPassGame();
-            // SceneManager.LoadScene(nextLevelName);
+            if (gameOverManager) {
+                gameOverManager.ShowPassGame();
+            } else {
+                // SceneManager.LoadScene(nextLevelName);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag.Equals("Circle")){
             Debug.Log("Flag intersected, next level");
-            // SceneManager.LoadScene(nextLevelName);
-            gameOverManager.ShowPassGame();
+            if (gameOverManager) {
+                gameOverManager.ShowPassGame();
+            } else {
+                // SceneManager.LoadScene(nextLevelName);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
 }
