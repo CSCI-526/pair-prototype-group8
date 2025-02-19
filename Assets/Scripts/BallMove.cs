@@ -10,6 +10,12 @@ public class BallMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0.0f;
+        // rb.velocity = new Vector2(speed, rb.velocity.y);
+    }
+
+    public void Begin(){
+        rb.gravityScale = 1.0f;
         rb.velocity = new Vector2(speed, rb.velocity.y);
     }
 
