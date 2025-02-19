@@ -18,7 +18,7 @@ public class LevelSelector : MonoBehaviour
     }
 
     public void OpenLevelScene() {
-        var type = ToggleSwitch.CurrentValue ? "WackyLevel" : "Level";
+        var type = ToggleSwitch.CurrentValue ? "WackyLevel" : "NEW Level ";
         Debug.Log("Current type: " + type);
         SceneManager.LoadScene(type + level.ToString());
     }

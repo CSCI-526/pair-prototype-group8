@@ -9,36 +9,45 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 6dbf44efbffbd4325880f24ad9340176
   - enabled: 1
+    path: Assets/Scenes/New Levels/Teach Horizontal/NEW Level 1.unity
+    guid: 5dcbd2cd7617f4a65a6bc6f94c042509
+  - enabled: 1
+    path: Assets/Scenes/New Levels/Teach Horizontal/NEW Level 2.unity
+    guid: 9fbc0f029366e40ba9a5e0ee8561f285
+  - enabled: 1
+    path: Assets/Scenes/New Levels/Teach Horizontal/NEW Level 3.unity
+    guid: dc80c5fd4935642da98a78c16c01a02a
+  - enabled: 0
     path: Assets/Scenes/Old Levels/Level1.unity
     guid: a4640dc8681eb41ff9d7de7acde829fe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/Level2.unity
     guid: 75ca3fa282dfc49639ac41505744aa26
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/Level3.unity
     guid: b9a7e2a981e674fcb849a70a0bcf158b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/Level4.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/Level5.unity
     guid: 4689ab33bb5f644119f1aede29454744
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/Level6.unity
     guid: 735f26a6c6d644f638237d78bb8ac00b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/WackyLevel0.unity
     guid: bca441a8e168e4a8dbc4d56713b9c12c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/WackyLevel01.unity
     guid: c990543c35e2f473a8eebe385617b8b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/WackyLevel1.unity
     guid: 7d986c2528e0d48af8af265059400088
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/WackyLevel2.unity
     guid: 7804957053bc34ef68e39728549c295a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Levels/WackyLevel6.unity
     guid: 1868abc7aad9248f18348b625f9a1829
   m_configObjects: {}
