@@ -22,10 +22,15 @@ public class TimerScript : MonoBehaviour
     private float cutoff1;
     private float cutoff2;
     private float cutoff3;
+    private bool penalty1Given = false;
+    private bool penalty2Given = false;
+    private bool penalty3Given = false;
+    private int starCount;
     // Start is called before the first frame update
     void Start()
     {
         timeElapsed = 0.0f;
+        starCount = 3;
         cutoff1 = (float) Variables.Object(Star1).Get("cutoff");
         cutoff2 = (float) Variables.Object(Star2).Get("cutoff");
         cutoff3 = (float) Variables.Object(Star3).Get("cutoff");
@@ -55,14 +60,20 @@ public class TimerScript : MonoBehaviour
 
         if (timerStarted && !timerDone){
             timeElapsed += Time.deltaTime;
-            if (timeElapsed >= cutoff1){
+            if (timeElapsed >= cutoff1 && !penalty1Given){
                 Penalty1.SetActive(true);
+                penalty1Given = true;
+                starCount -= 1;
             }
-            if (timeElapsed >= cutoff2){
+            if (timeElapsed >= cutoff2 && !penalty2Given){
                 Penalty2.SetActive(true);
+                starCount -= 1;
+                penalty2Given = true;
             }
-            if (timeElapsed >= cutoff3){
+            if (timeElapsed >= cutoff3 && !penalty3Given){
                 Penalty3.SetActive(true);
+                penalty3Given = true;
+                starCount -= 1;
             }
             //if > star, activate cross out
         }
@@ -71,5 +82,9 @@ public class TimerScript : MonoBehaviour
         int f = (int)(timeElapsed * 100);
         float floatF = f/100.0f;
         textMP.text = $"Time: {floatF}";
+    }
+
+    public int GetStarCount() {
+        return starCount;
     }
 }
