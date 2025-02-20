@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Levels/Teach5 SpikesAttached/NEW Level 13.unity
     guid: 7c326ee0c8657442eb9953530b8bdf1c
+  - enabled: 1
+    path: Assets/Scenes/New Levels/Teach5 SpikesAttached/NEW Level 14.unity
+    guid: e013393f9fd644380b5fc39d47cb74d3
+  - enabled: 1
+    path: Assets/Scenes/New Levels/Teach5 SpikesAttached/NEW Level 15.unity
+    guid: a551634af09c24592a36dad36ac5ae42
   m_configObjects: {}
