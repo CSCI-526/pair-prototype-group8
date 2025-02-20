@@ -22,7 +22,7 @@ public class LevelSelector : MonoBehaviour
     {
         levelText.text = level.ToString();
         int starCount = PlayerPrefs.GetInt("stars" + LevelSelectionManager.type + level.ToString(), 0);
-        Debug.Log("star count: " + starCount);
+        // Debug.Log("star count: " + starCount);
         SpawnStar(starCount);
     }
 
@@ -35,6 +35,7 @@ public class LevelSelector : MonoBehaviour
     }
 
     public void OpenLevelScene() {
+        Debug.Log("click");
         // var type = ToggleSwitch.CurrentValue ? "WackyLevel" : "NEW Level ";
         LevelSelectionManager.currentLevel = level;
         Debug.Log("current select: " + LevelSelectionManager.currentLevel);
