@@ -7,6 +7,12 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
 
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartGame();
+        }
+    }
     public void PauseGame() {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f; // freeze game
