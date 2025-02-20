@@ -19,6 +19,7 @@ public class PauseMenu : MonoBehaviour
 
     public void BackToHome(int sceneID) {
         Time.timeScale = 1f;
+        LevelSelectionManager.ShowLevelSelector = true; 
         SceneManager.LoadScene(sceneID);
     }
 

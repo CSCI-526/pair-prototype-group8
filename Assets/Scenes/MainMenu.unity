@@ -1161,12 +1161,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667125719}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9717.682}
+  m_LocalScale: {x: 107.97424, y: 107.97424, z: 107.97424}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 793911602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679400203
 GameObject:
@@ -1319,6 +1319,7 @@ GameObject:
   - component: {fileID: 793911601}
   - component: {fileID: 793911600}
   - component: {fileID: 793911599}
+  - component: {fileID: 793911603}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1405,6 +1406,7 @@ RectTransform:
   - {fileID: 588488000}
   - {fileID: 2019448227}
   - {fileID: 1656165659}
+  - {fileID: 667125722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1412,6 +1414,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920.458, y: 1079.7424}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &793911603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793911598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 406820cc237fb4875ac0992dc196cb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelPanel: {fileID: 2019448226}
+  menuButton: {fileID: 1656165658}
+  title: {fileID: 588487999}
 --- !u!1 &807544629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,6 +2462,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406820cc237fb4875ac0992dc196cb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelPanel: {fileID: 0}
+  menuButton: {fileID: 0}
+  title: {fileID: 0}
 --- !u!1001 &1888409032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2969,4 +2989,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 1826420303}
   - {fileID: 793911602}
-  - {fileID: 667125722}
