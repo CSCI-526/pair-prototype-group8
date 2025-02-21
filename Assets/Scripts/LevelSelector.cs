@@ -7,8 +7,9 @@ using TMPro;
 
 public class LevelSelector : MonoBehaviour
 {
-    public int level;
+    public int levelInMission;
     public TextMeshProUGUI levelText;
+    private int actualLevel;
 
     public GameObject zeroStar;
     public GameObject oneStar;
@@ -20,8 +21,13 @@ public class LevelSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelText.text = level.ToString();
-        int starCount = PlayerPrefs.GetInt("stars" + LevelSelectionManager.type + level.ToString(), 0);
+        
+    }
+
+    private void OnEnable() {
+        actualLevel = (LevelSelectionManager.mission - 1) * 3 + levelInMission;
+        levelText.text = actualLevel.ToString();
+        int starCount = PlayerPrefs.GetInt("stars" + LevelSelectionManager.type + actualLevel.ToString(), 0);
         // Debug.Log("star count: " + starCount);
         SpawnStar(starCount);
     }
@@ -37,8 +43,8 @@ public class LevelSelector : MonoBehaviour
     public void OpenLevelScene() {
         Debug.Log("click");
         // var type = ToggleSwitch.CurrentValue ? "WackyLevel" : "NEW Level ";
-        LevelSelectionManager.currentLevel = level;
+        LevelSelectionManager.currentLevel = actualLevel;
         Debug.Log("current select: " + LevelSelectionManager.currentLevel);
-        SceneManager.LoadScene(LevelSelectionManager.type + level.ToString());
+        SceneManager.LoadScene(LevelSelectionManager.type + actualLevel.ToString());
     }
 }
