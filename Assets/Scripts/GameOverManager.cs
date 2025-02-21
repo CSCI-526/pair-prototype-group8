@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameOverManager : MonoBehaviour
     public GameObject oneGrid;
     public GameObject twoGrid;
     public GameObject allGrid;
+    public GameObject nextButton;
+    public TextMeshProUGUI passText;
+    
 
     public TimerScript timer;
     // Start is called before the first frame update
@@ -29,6 +33,11 @@ public class GameOverManager : MonoBehaviour
         timer = FindObjectOfType<TimerScript>();
         Time.timeScale = 0f;
         gamePassUI.SetActive(true);
+        if(LevelSelectionManager.currentLevel == 21) {
+            nextButton.SetActive(false);
+            passText.text = "You Completed!";
+        }
+        
         starForLevel = timer.GetStarCount();
         SpawnStar(starForLevel);
         Debug.Log("----- star acquired: " + starForLevel.ToString());
