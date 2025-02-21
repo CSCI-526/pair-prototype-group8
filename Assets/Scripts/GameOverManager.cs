@@ -40,7 +40,9 @@ public class GameOverManager : MonoBehaviour
     public void LoadNextLevel() {
         Time.timeScale = 1f;
         LevelSelectionManager.currentLevel += 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("next level: " + LevelSelectionManager.currentLevel.ToString());
+        SceneManager.LoadScene(LevelSelectionManager.type + LevelSelectionManager.currentLevel.ToString());
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void SpawnStar(int starCount)
