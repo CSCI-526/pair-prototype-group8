@@ -2188,6 +2188,8 @@ MonoBehaviour:
   oneGrid: {fileID: 818048226973233487}
   twoGrid: {fileID: 3997812550673575869}
   allGrid: {fileID: 4217315210654061050}
+  nextButton: {fileID: 5963756134504726755}
+  passText: {fileID: 4953683738044801049}
   timer: {fileID: 0}
 --- !u!1 &5483143455484758407
 GameObject:
