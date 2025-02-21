@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/New Levels/Teach3 Transparent/NEW Level 7.unity
     guid: 1f3c2666f8ffb4946b5c104f53ee3d61
   - enabled: 1
+    path: Assets/Scenes/New Levels/Teach3 Transparent/NEW Level 8.unity
+    guid: 479ff07dd2724492694a887a723521c3
+  - enabled: 1
     path: Assets/Scenes/New Levels/Teach3 Transparent/NEW Level 9.unity
     guid: 53202b328428f46c2af11abbe9ae0b55
   - enabled: 1
